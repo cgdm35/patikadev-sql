@@ -112,4 +112,41 @@ WHERE name='Merissa';
 SELECT *
 FROM employee;
 
+-----------------------------------------------
+SORU 4: Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+--4.1
+DELETE FROM employee
+WHERE name LIKE 'C%';
+
+SELECT *
+FROM employee;
+
+--4.2
+DELETE FROM employee
+WHERE email LIKE 'n%';
+
+SELECT *
+FROM employee;
+
+--4.3
+DELETE FROM employee
+WHERE id IN (45,48);
+
+SELECT * FROM employee;
+
+--4.4
+DELETE FROM employee
+WHERE id IN (45,48);
+
+
+SELECT * FROM employee;
+
+--4.5
+DELETE FROM employee
+WHERE id <10;
+
+
+SELECT * FROM employee;
+
+
 
