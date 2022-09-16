@@ -136,7 +136,7 @@ SELECT * FROM employee;
 
 --4.4
 DELETE FROM employee
-WHERE id IN (45,48);
+WHERE BETWEEN 15 AND 17;
 
 
 SELECT * FROM employee;
