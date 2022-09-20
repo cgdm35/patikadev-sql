@@ -49,7 +49,7 @@ SELECT first_name
 FROM actor
 ORDER BY first_name
 )
-UNION 
+UNION ALL
 (
 SELECT first_name
 FROM customer
@@ -75,7 +75,7 @@ SELECT first_name
 FROM actor
 ORDER BY first_name
 )
-EXCEPT
+EXCEPT ALL
 (
 SELECT first_name
 FROM customer
