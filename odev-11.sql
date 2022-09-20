@@ -7,7 +7,7 @@ SELECT first_name
 FROM actor
 ORDER BY first_name
 )
-UNION ALL
+UNION 
 (
 SELECT first_name
 FROM customer
@@ -43,7 +43,42 @@ ORDER BY first_name
 );
 
 --4) İlk 3 sorguyu tekrar eden veriler için de yapalım.
+--4.1)
+(
+SELECT first_name
+FROM actor
+ORDER BY first_name
+)
+UNION 
+(
+SELECT first_name
+FROM customer
+ORDER BY first_name
+);
 
+--4.2)
+(
+SELECT first_name
+FROM actor
+ORDER BY first_name
+)
+INTERSECT ALL
+(
+SELECT first_name
+FROM customer
+ORDER BY first_name
+);
 
-
+--4.3
+(
+SELECT first_name
+FROM actor
+ORDER BY first_name
+)
+EXCEPT
+(
+SELECT first_name
+FROM customer
+ORDER BY first_name
+);
 
